@@ -11,6 +11,7 @@ module.exports = {
         xs: "0.81rem",
       },
       colors: {
+        "main-text": "#005F3D",
         black: {
           DEFAULT: "#121212",
           100: "#010103",

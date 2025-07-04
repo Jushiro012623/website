@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useWindowScroll } from "react-use";
 
 const useNavbar = () => {

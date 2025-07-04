@@ -24,7 +24,7 @@ export const navLinks = [
 
 export const NavItem = ({ onClick = () => {} }) => {
   return (
-    <ul className="flex flex-col items-start gap-4 relative">
+    <ul className="flex items-start gap-4 relative">
       {navLinks.map((item: NavLinks) => (
         <li key={item.id} className="text-white link-text relative">
           <TextDipserse className="text-xs">
@@ -32,11 +32,6 @@ export const NavItem = ({ onClick = () => {} }) => {
           </TextDipserse>
         </li>
       ))}
-      <li className="text-white relative">
-        <TextDipserse className="text-xs text-white">
-          <p>•••••</p>
-        </TextDipserse>
-      </li>
     </ul>
   );
 };
