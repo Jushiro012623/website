@@ -1,0 +1,42 @@
+.introLine {
+  display: flex;
+  /* font-size: 6vw; */
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.introLine a {
+  margin: 0px;
+}
+.introLine p {
+  margin: 0px;
+}
+
+.introLine:nth-of-type(5),
+.introLine:nth-of-type(6) {
+  display: inline-flex;
+}
+
+.introLine:nth-of-type(6) {
+  right: -40px;
+
+  position: relative;
+}
+
+.underline-char {
+  position: relative;
+  z-index: 2;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #ffffff; /* Or any color */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}

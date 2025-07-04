@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-black;
+}
+
+.curve {
+  svg,
+  .background {
+    width: 100vw;
+    height: calc(100vh + 600px);
+    top: -300px;
+    left: 0;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+  }
+}
+
+.link-text {
+  position: relative;
+}
+
+.link-text::after {
+  content: "";
+  background-color: #fff; /* Tailwind's neutral-800 */
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1.5px;
+  width: 100%;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.link-text:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}

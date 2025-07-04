@@ -1,0 +1,1 @@
+export type CurveDimension = { width: number, height: number }
