@@ -13,7 +13,7 @@ export default function TextDipserse({
   const containerRef = useRef<HTMLDivElement>(null);
 
   const getChars = (element: any) => {
-    let chars: any = [];
+    const chars: any = [];
 
     const word = element.props.children;
 

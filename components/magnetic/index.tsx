@@ -17,7 +17,7 @@ export function Magnetic({children}: any) {
             yTo(y)
         }
 
-        const mouseLeave = (e: MouseEvent<HTMLDivElement>) => {
+        const mouseLeave = () => {
             gsap.to(magnetic.current, {x: 0, duration: 1})
             gsap.to(magnetic.current, {y: 0, duration: 1})
             xTo(0);
