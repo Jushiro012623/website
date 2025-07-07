@@ -6,17 +6,14 @@ import Orbit from "./orbit";
 
 const Hero = () => {
   const contentRef = useMainTransition();
-
   return (
-    <div>
-      <div
-        ref={contentRef}
-        className="relative flex text-white  items-center justify-center w-full h-screen">
-        <LeftText />
-        <MidText />
-        <RightText />
-        <Orbit />
-      </div>
+    <div
+      ref={contentRef}
+      className="relative flex text-white  items-center justify-center w-full h-screen">
+      <LeftText />
+      <MidText />
+      <RightText />
+      <Orbit />
     </div>
   );
 };

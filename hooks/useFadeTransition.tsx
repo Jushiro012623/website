@@ -1,33 +1,49 @@
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
-
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
 gsap.registerPlugin(ScrollTrigger);
 
-export const useFadeTransition = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
+/**
+ * Applies a fade transition between two sections using GSAP ScrollTrigger.
+ * 
+ * @param fadeOutRef - The element to fade out
+ * @param fadeInRef - The element to fade in
+ */
+export const useFadeTransition = (fadeOutRef?: React.RefObject<HTMLElement>, fadeInRef?: React.RefObject<HTMLElement>) => {
+  // Fade Out
+  useGSAP(() => {
+    if (!fadeOutRef?.current) return;
 
-  useEffect(() => {
-    if (!containerRef.current) return;
+    gsap.to(fadeOutRef.current, {
+      opacity: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: fadeOutRef.current,
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  }, [fadeOutRef]);
 
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        containerRef.current,
-        { opacity: 0, },
-        {
-          opacity: 1,
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top bottom", // start fading in when the section enters
-            end: "top top", // fully visible at top of viewport
-            scrub: true, // makes animation follow scroll
-          },
-        }
-      );
-    }, containerRef);
+  // Fade In
+  useGSAP(() => {
+    if (!fadeInRef?.current) return;
 
-    return () => ctx.revert();
-  }, []);
-
-  return { containerRef };
+    gsap.fromTo(
+      fadeInRef.current,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        ease: "none",
+        scrollTrigger: {
+          trigger: fadeInRef.current,
+          start: "top bottom",
+          end: "top top",
+          scrub: true,
+        },
+      }
+    );
+  }, [fadeInRef]);
 };
