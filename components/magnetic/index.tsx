@@ -1,10 +1,11 @@
-import React, { MouseEvent, useEffect, useRef } from 'react'
+import React, { MouseEvent,  useRef } from 'react'
 import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
 
 export function Magnetic({children}: any) {
     const magnetic = useRef<any>(null);
 
-    useEffect( () => {
+    useGSAP( () => {
         const xTo = gsap.quickTo(magnetic.current, "x", {duration: 1, ease: "elastic.out(1, 0.3)"})
         const yTo = gsap.quickTo(magnetic.current, "y", {duration: 1, ease: "elastic.out(1, 0.3)"})
 

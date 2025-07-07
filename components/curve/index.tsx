@@ -17,4 +17,5 @@ const Curve = forwardRef<HTMLDivElement, PropsWithChildren>((props, ref) => {
   );
 });
 
+Curve.displayName = "Curve";
 export default Curve;
