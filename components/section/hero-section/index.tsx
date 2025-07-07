@@ -2,8 +2,8 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React, { useRef } from "react";
-import MyImage from "./my-image";
-import TextHero from "./text";
+// import MyImage from "./my-image";
+import { LeftText, MidText, RightText } from "./text";
 import Orbit from "./orbit";
 // import QuoteHero from "./quote";
 
@@ -27,14 +27,16 @@ const Hero = () => {
       }
     );
   }, []);
+
   return (
     <div
       ref={contentRef}
       className="relative flex text-white  items-center justify-center w-full h-screen">
-      <MyImage />
+      {/* <MyImage /> */}
       <Orbit />
-      <TextHero />
-      {/* <QuoteHero /> */}
+      <LeftText />
+      <MidText />
+      <RightText />
     </div>
   );
 };

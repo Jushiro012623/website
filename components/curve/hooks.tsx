@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
 import { CurveDimension } from "./types";
 import { useGSAP } from "@gsap/react";
+
 const useCurve = () => {
   const [dimension, setDimension] = useState<CurveDimension>({
     height: 0,
@@ -44,6 +45,7 @@ const useCurveAnimation = ({ width, height }: CurveDimension) => {
         Q${width / 2} ${height} 0 ${height}
         L0 300
     `;
+
   useGSAP(() => {
     const el: any = svgRef.current;
 

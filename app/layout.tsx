@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import '@/styles/global.css'
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
+import { inter } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Ivan Macabontoc",
@@ -19,7 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} overflow-x-hidden`}>
+      <body className={`_app ${inter.className} overflow-x-hidden bg-gradient-to-r from-black to-black-200`}>
+        asdas
         {children}
       </body>
     </html>
