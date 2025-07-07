@@ -3,7 +3,7 @@ import gsap from "gsap";
 import Lenis from "lenis";
 import { useEffect, useRef } from "react";
 
-const useOnPageLoad = () => {
+const useOnPageScrollPerspective = () => {
   const boxRef = useRef(null);
   const targetRef = useRef(null);
   useGSAP(
@@ -59,4 +59,4 @@ const useSmoothScoll = () => {
     requestAnimationFrame(raf);
   }, []);
 }
-export {useOnPageLoad,useSmoothScoll};
+export {useOnPageScrollPerspective,useSmoothScoll};

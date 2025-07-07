@@ -7,9 +7,7 @@ const Navbar = () => {
       <>
         <div className="flex h-full justify-between items-center gap-y-4 py-5 mx-auto sm:px-5 px-5">
           <div className="flex gap-2">
-            <TextDipserse className="text-lg text-white font-extrabold">
-              <p>IVAN</p>
-            </TextDipserse>
+            <p className="text-lg text-white font-extrabold">IVAN</p>
           </div>
           <NavItem />
         </div>

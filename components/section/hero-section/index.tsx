@@ -1,42 +1,22 @@
 "use client";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import React, { useRef } from "react";
-// import MyImage from "./my-image";
+import React from "react";
 import { LeftText, MidText, RightText } from "./text";
+import { useMainTransition } from "@/hooks/useMainTransition";
 import Orbit from "./orbit";
-// import QuoteHero from "./quote";
 
 const Hero = () => {
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(() => {
-    if (!contentRef.current) return;
-    gsap.fromTo(
-      contentRef.current,
-      { y: 100, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.75,
-        ease: "power2.inOut",
-        scrollTrigger: {
-          trigger: contentRef.current,
-          start: "top 80%",
-        },
-      }
-    );
-  }, []);
+  const contentRef = useMainTransition();
 
   return (
-    <div
-      ref={contentRef}
-      className="relative flex text-white  items-center justify-center w-full h-screen">
-      {/* <MyImage /> */}
-      <Orbit />
-      <LeftText />
-      <MidText />
-      <RightText />
+    <div>
+      <div
+        ref={contentRef}
+        className="relative flex text-white  items-center justify-center w-full h-screen">
+        <LeftText />
+        <MidText />
+        <RightText />
+        <Orbit />
+      </div>
     </div>
   );
 };
