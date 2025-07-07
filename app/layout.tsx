@@ -15,7 +15,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`_app ${inter.className} overflow-x-hidden bg-gradient-to-r from-black to-black-200`}>
-        asdas
         {children}
       </body>
     </html>
