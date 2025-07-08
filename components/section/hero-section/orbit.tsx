@@ -32,7 +32,7 @@ const techStack = [
   },
   {
     src: "/assets/nextjs.svg",
-    bg: "bg-neutral-800",
+    bg: "bg-white",
     shadow: "drop-shadow-[0_25px_25px_rgba(38,38,38,1)]",
   },
   {
@@ -53,7 +53,7 @@ const techStack = [
   {
     src: "/assets/vite.svg",
     bg: "bg-sky-500",
-    shadow: "drop-shadow-[0_25px_25px_rgba(14,165,233,0.5)]",
+    shadow: "drop-shadow-[0_25px_25px_rgba(189,52,254,0.5)]",
   },
   {
     src: "/assets/py.svg",
@@ -63,6 +63,11 @@ const techStack = [
   {
     src: "/assets/redux.svg",
     bg: "bg-violet-500",
+    shadow: "drop-shadow-[0_25px_25px_rgba(139,92,246,0.5)]",
+  },
+  {
+    src: "/assets/express.svg",
+    bg: "bg-white",
     shadow: "drop-shadow-[0_25px_25px_rgba(139,92,246,0.5)]",
   },
 ];
@@ -125,7 +130,7 @@ const Orbit = () => {
   return (
     // translate-y-1/2 bottom-1/2 right-20 -translate-x-1/2
     <Fragment>
-      <div className="absolute hidden sm:block bottom-1/2 translate-y-1/2  xl:translate-x-1/2 w-[600px] h-[500px] z-[-1]">
+      <div className="absolute hidden sm:block bottom-1/2 translate-y-1/2  xl:translate-x-[70%] w-[600px] h-[500px] z-[-1]">
         <div className="relative w-full h-full ">
           {techStack.map((item, index) => {
             const pos = positions[index];

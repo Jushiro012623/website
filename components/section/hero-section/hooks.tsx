@@ -12,8 +12,8 @@ const useZeroGravity = () => {
   useGSAP(() => {
     if (!ref.current) return;
     gsap.to(ref.current, {
-      y: () => gsap.utils.random(-10, 20),
-      x: () => gsap.utils.random(-10, 20),
+      y: () => gsap.utils.random(-50, 80),
+      x: () => gsap.utils.random(-50, 80),
       duration: 5,
       ease: "sine.inOut",
       repeat: -1,

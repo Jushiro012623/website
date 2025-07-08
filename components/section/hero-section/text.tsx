@@ -4,7 +4,7 @@ import React from "react";
 import { Magnetic } from "@/components/magnetic";
 const LeftText = () => {
   return (
-    <div className="absolute left-0 -rotate-90 -translate-x-28 hidden ">
+    <div className="absolute left-0 -rotate-90 -translate-x-28 hidden xl:block ">
       <p className="uppercase text-sm flex items-center gap-3 ">
         <span className="block w-32 h-[1px] bg-white" />
         <span>My portfolio</span>

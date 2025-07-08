@@ -12,7 +12,7 @@ const MyImage = () => {
           ref={ref}
           className={`rounded-lg w-full h-full bg-bottom bg-no-repeat bg-cover`}
           style={{
-            backgroundImage: "url('/assets/me.jpg')",
+            backgroundImage: "url('/assets/swordman.webp')",
             backgroundColor: "rgba(0, 0, 0, 0.4)",
             backgroundBlendMode: "darken",
           }}

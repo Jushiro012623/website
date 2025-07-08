@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import { LeftText, MidText, RightText } from "./text";
+import { LeftText, MidText } from "./text";
 import { useMainTransition } from "@/hooks/useMainTransition";
+import MyImage from "./my-image";
 import Orbit from "./orbit";
-
 const Hero = () => {
   const contentRef = useMainTransition();
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
       className="relative flex text-white  items-center justify-center w-full h-screen">
       <LeftText />
       <MidText />
-      <RightText />
+      {/* <MyImage /> */}
       <Orbit />
     </div>
   );

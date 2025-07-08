@@ -17,6 +17,7 @@ export const useFadeTransition = (fadeOutRef?: React.RefObject<HTMLElement>, fad
 
     gsap.to(fadeOutRef.current, {
       opacity: 0,
+      y: 0,
       ease: "none",
       scrollTrigger: {
         trigger: fadeOutRef.current,
@@ -33,8 +34,9 @@ export const useFadeTransition = (fadeOutRef?: React.RefObject<HTMLElement>, fad
 
     gsap.fromTo(
       fadeInRef.current,
-      { opacity: 0 },
+      { opacity: 0,y: 100 },
       {
+        y: 0,
         opacity: 1,
         ease: "none",
         scrollTrigger: {

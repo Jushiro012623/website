@@ -1,124 +1,47 @@
-import { BentoTilt } from "@/components/bento";
-import React, { useState } from "react";
+"use client";
+import React from "react";
 
-const About = () => {
-  const [hasCopied, setHasCopied] = useState(false);
-  const handleCopy = () => {
-    navigator.clipboard.writeText(" ivanallen64@gmail.com");
-    setHasCopied(true);
-
-    setTimeout(() => {
-      setHasCopied(false);
-    }, 2000);
-  };
-
+const index = () => {
   return (
-    <section className=" c-space my-20 max-w-7xl mx-auto" id="about">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
-        <BentoTilt className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img
-              src="/assets/self.png"
-              alt="grid-1"
-              className="w-full sm:h-[276px] h-fit object-contain"
-            />
+    <div className="min-h-screen w-full">
+      <div className="max-w-[68rem] mx-auto">
+        <p className="text-white font-extralight text-6xl tracking-tight leading-tight">
+          I specialize in building scalable, maintainable web applications using
+          modern frontend and backend technologies.
+        </p>
+        <span className="block w-full h-20" />
+        <div>
+          <p className="text-white font-light text-sm ">This is me.</p>
+          <span className="block w-full h-3" />
+          <span className="block h-[.5px] w-full bg-white/50" />
+        </div>
 
-            <div>
-              <p className="grid-headtext ">Hi, I’m Ivan Macabontoc</p>
-              <p className="grid-subtext">
-                As a developer, I have honed my skills in both frontend and
-                backend development, creating dynamic and responsive websites.
-              </p>
-            </div>
+        <span className="block w-full h-9" />
+        <div className="flex flex-col md:flex-row gap-20 p-6 text-white ">
+          <p className={`text-4xl md:text-5xl font-semibold max-w-[26rem] md:flex-shrink-0`}>
+            Hi, I'm <span className="text-amber-400">Ivan</span>.
+          </p>
+          <span className="block w-20 h-full" />
+          <div className="space-y-4 text-base font-extralight leading-relaxed tracking-wide max-w-4xl">
+            <p className=" w-full">
+              I'm a software developer with a strong foundation in
+              Object-Oriented Programming (OOP), design patterns, version
+              control, and practical experience using Object-Relational Mapping
+              (ORM) tools.
+            </p>
+            <p>
+              I work across the full development lifecycle—from API design and
+              database management to building scalable system architecture. I
+              also have cross-domain experience in automation, AR, OCR, web
+              scraping, and machine learning using tools like Selenium,
+              Tesseract, OpenCV, and TensorFlow.
+            </p>
           </div>
-        </BentoTilt>
-
-        <BentoTilt className="col-span-1 xl:row-span-3">
-          <div className="grid-container">
-            <img
-              src="/assets/stacks.png"
-              alt="grid-2"
-              className="w-full sm:h-[276px] h-fit object-contain"
-            />
-
-            <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">
-                I specialize in a variety of languages, frameworks, and tools
-                that allow me to build robust and scalable applications
-              </p>
-            </div>
-          </div>
-        </BentoTilt>
-
-        <BentoTilt className="col-span-1 xl:row-span-4">
-          <div className="grid-container">
-            <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              HELLO
-            </div>
-            <div>
-              <p className="grid-headtext">
-                I’m very flexible with time zone communications & locations
-              </p>
-              <p className="grid-subtext">
-                I&apos;m based in Manila, Philippines and open to remote work
-                worldwide.
-              </p>
-              <a
-                href="#contact"
-                className="w-fit">
-                <button
-                  name="Contact Me"
-                >CONTACT ME</button>
-              </a>
-            </div>
-          </div>
-        </BentoTilt>
-
-        <BentoTilt className="xl:col-span-2 xl:row-span-3">
-          <div className="grid-container">
-            <img
-              src="/assets/grid3.png"
-              alt="grid-3"
-              className="w-full sm:h-[266px] h-fit object-contain"
-            />
-
-            <div>
-              <p className="grid-headtext">My Passion for Coding</p>
-              <p className="grid-subtext">
-                I love solving problems and building things through code.
-                Programming isn&apos;t just my profession—it&apos;s my passion.
-                I enjoy exploring new technologies, and enhancing my skills.
-              </p>
-            </div>
-          </div>
-        </BentoTilt>
-
-        <BentoTilt className="xl:col-span-1 xl:row-span-2">
-          <div className="grid-container">
-            <img
-              src="/assets/grid4.png"
-              alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
-            />
-
-            <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
-              <div className="copy-container" onClick={handleCopy}>
-                <img
-                  src={hasCopied ? "/assets/tick.svg" : "/assets/copy.svg"}
-                  alt="copy"
-                />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
-                  ivanallen64@gmail.com
-                </p>
-              </div>
-            </div>
-          </div>
-        </BentoTilt>
+          <span className="block w-28 h-full" />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default About;
+export default index;

@@ -7,12 +7,12 @@ import ParticleCanvas from "@/components/particle";
 import About from "@/components/section/about";
 import { useSmoothScoll } from "@/hooks/useSmoothScroll";
 import { useFadeTransition } from "@/hooks/useFadeTransition";
+import Project from "@/components/section/projects";
 
 const Home = () => {
   useSmoothScoll();
   const heroRef = useRef<any>(null);
   const aboutRef = useRef<any>(null);
-
   useFadeTransition(heroRef, aboutRef);
 
   return (
@@ -21,9 +21,11 @@ const Home = () => {
       <div ref={heroRef}>
         <Hero />
       </div>
-
       <div ref={aboutRef}>
         <About />
+      </div>
+      <div>
+        <Project />
       </div>
       <ParticleCanvas />
     </Curve>
