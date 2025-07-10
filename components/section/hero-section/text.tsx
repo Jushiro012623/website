@@ -2,6 +2,7 @@
 import { anton } from "@/lib/fonts";
 import React from "react";
 import { Magnetic } from "@/components/magnetic";
+import { BentoTilt } from "@/components/bento";
 const LeftText = () => {
   return (
     <div className="absolute left-0 -rotate-90 -translate-x-28 hidden xl:block ">
@@ -18,8 +19,16 @@ const MidText = () => {
   return (
     <div className="flex flex-col items-center max-w-[550px] lg:items-start mb-auto translate-y-1/2 lg:mr-auto xl:translate-x-[72%] xl:translate-y-[72%] lg:translate-x-[30%]">
       <div className={` ${anton.className} text-[5rem]`}>
-        <p className="text-amber-400 tracking-wide text-center lg:text-left">SOFTWARE</p>
-        <p className="lg:ml-8 -translate-y-10 tracking-wide text-center">DEVELOPER</p>
+        <BentoTilt>
+          <p className="text-amber-400 tracking-wide text-center lg:text-left">
+            SOFTWARE
+          </p>
+        </BentoTilt>
+        <BentoTilt>
+          <p className="lg:ml-8 -translate-y-10 tracking-wide text-center">
+            DEVELOPER
+          </p>
+        </BentoTilt>
       </div>
       <div className="w-full -translate-y-10 font-light text-center px-5 lg:text-left lg:px-0">
         <p>

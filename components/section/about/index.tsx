@@ -1,4 +1,6 @@
 "use client";
+import { BentoTilt } from "@/components/bento";
+import Image from "next/image";
 import React from "react";
 
 const index = () => {
@@ -18,9 +20,11 @@ const index = () => {
 
         <span className="block w-full h-9" />
         <div className="flex flex-col md:flex-row gap-20 p-6 text-white ">
-          <p className={`text-4xl md:text-5xl font-semibold max-w-[26rem] md:flex-shrink-0`}>
-            Hi, I'm <span className="text-amber-400">Ivan</span>.
-          </p>
+          <div className="max-w-[26rem] md:flex-shrink-0 flex flex-col">
+            <p className={`text-4xl md:text-5xl font-semibold `}>
+              Hi, I'm <span className="text-amber-400">Ivan</span>.
+            </p>
+          </div>
           <span className="block w-20 h-full" />
           <div className="space-y-4 text-base font-extralight leading-relaxed tracking-wide max-w-4xl">
             <p className=" w-full">

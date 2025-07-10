@@ -10,7 +10,7 @@ const Hero = () => {
     <div
       ref={contentRef}
       className="relative flex text-white  items-center justify-center w-full h-screen">
-      <LeftText />
+      {/* <LeftText /> */}
       <MidText />
       {/* <MyImage /> */}
       <Orbit />

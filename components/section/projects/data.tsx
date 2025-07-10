@@ -1,100 +1,37 @@
 export const projects = [
   {
-    title: "Matthias Leidinger",
-
-    description:
-      "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
-
-    src: "self.png",
-
-    link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
-
+    title: "Cargo Pulse",
+    description: "A cargo booking system is a digital platform that facilitates the reservation, tracking, and management of cargo shipments. It allows businesses and individuals to book freight transport services, manage logistics, and monitor shipments in real time.",
+    src: "booking-no-bg.png",
+    url: "https://cargos-orpin.vercel.app/",
     color: "bg-black text-white",
+    img: "shadow-lg shadow-neutral-800"
   },
-
   {
-    title: "Clément Chapillon",
-
-    description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
-
-    src: "swordman.webp",
-
-    link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
-
+    title: "Triumph Co.",
+    description: "Triump is your go-to thrift shop where you can find a wide range of thrifted products at unbeatable prices, offering unique, high-quality items that fit every budget and style",
+    src: "triumph-no-bg.png",
+    url: "#",
     color: "bg-white",
+    img: "shadow-lg"
   },
-
   {
-    title: "Zissou",
-
+    title: "Barangay Management",
     description:
-      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
-
-    src: "stacks.png",
-
-    link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
-
+      "The Barangay Management System is designed to streamline operations, improve communication, and enhance services for Barangay 107 residents and counsils.",
+    src: "bms-no-bg.png",
+    url: "https://bms-sage.vercel.app/",
     color: "bg-black text-white",
+    img: "shadow-lg shadow-neutral-800"
   },
   {
-    title: "Clément Chapillon",
-
+    title: "UDMAP AR Navigation",
     description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
-
-    src: "swordman.webp",
-
-    link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
-
+      "UDMAPS AR is an innovative augmented reality navigation platform designed to help users navigate the college vicinity. It provides real-time, interactive directions, allowing users to easily find buildings, classrooms, and facilities within the campus using AR Technology.",
+    src: "udm-no-bg.png",
+    url: "#",
     color: "bg-white",
+    img: "shadow-lg"
   },
-  {
-    title: "Zissou",
-
-    description:
-      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
-
-    src: "stacks.png",
-
-    link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
-
-    color: "bg-black text-white",
-  },
-  {
-    title: "Clément Chapillon",
-
-    description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
-
-    src: "swordman.webp",
-
-    link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
-
-    color: "bg-white",
-  },
-  {
-    title: "Zissou",
-
-    description:
-      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
-
-    src: "stacks.png",
-
-    link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
-
-    color: "bg-black text-white",
-  },
-  {
-    title: "Clément Chapillon",
-
-    description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
-
-    src: "swordman.webp",
-
-    link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
-
-    color: "bg-white",
-  },
+ 
 ];
